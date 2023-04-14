@@ -27,7 +27,7 @@ public class Humaine {
 	public String acheter(String bien, int prix) {
 		if (argent>prix){
 			perdreArgent(prix);
-			return "J'ai " + Integer.toString(getArgent()) + " sous en poche. Je vais pouvoir m'offrir " + bien + " à " + Integer.toString(prix) + " sous";
+			return "J'ai " + Integer.toString(getArgent() + prix) + " sous en poche. Je vais pouvoir m'offrir " + bien + " à " + Integer.toString(prix) + " sous";
 		}
 		else {
 			return "Je n'ai plus que " + Integer.toString(getArgent()) + " sous en poche. Je ne peux même pas m'offrir " + bien + " à " + Integer.toString(prix) + " sous";
@@ -40,6 +40,6 @@ public class Humaine {
 		argent = argent - pert;
 	}
 	public void parler(String texte) {
-		System.out.println("(" + getNom() + ") - " + texte);
+		System.out.println("(" + getNom() + ") - " + texte + ".");
 	}
 	}
