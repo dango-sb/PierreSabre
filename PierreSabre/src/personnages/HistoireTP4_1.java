@@ -1,8 +1,6 @@
-package histoire;
+package personnages;
 
-import personnages.Humain;
-
-public class HistoireTP4 {
+public class HistoireTP4_1 {
 	public static void main(String[] args){
 		Humain prof = new Humain("Prof", "kombucha", 54); 
 		prof.direBonjour();
@@ -10,6 +8,5 @@ public class HistoireTP4 {
 		prof.boire();
 		prof.acheter("jeu", 2);
 		prof.acheter("kimono", 50);
-
 	}
 }
